@@ -63,14 +63,14 @@ app.use(
 ); // rate limit
 
 // add routes middlewares
-app.use('/', (req, res) => {
-  res.redirect('https://documenter.getpostman.com/view/5295552/Uzs6zPSy');
-});
 app.use('/api/v1/bootcamps', bootCampRouter);
 app.use('/api/v1/courses', courseRouter);
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
+app.use('/', (req, res) => {
+  res.redirect('https://documenter.getpostman.com/view/5295552/Uzs6zPSy');
+});
 
 // global error handler
 app.use(errorHandler);
