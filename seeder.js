@@ -12,16 +12,16 @@ connectDB();
 
 // Read Json file
 const bootcamps = JSON.parse(
-  fs.readFileSync(`${__dirname}/course-resources/_data/bootcamps.json`, 'utf8')
+  fs.readFileSync(`${__dirname}/_data/bootcamps.json`, 'utf8')
 );
 const courses = JSON.parse(
-  fs.readFileSync(`${__dirname}/course-resources/_data/courses.json`, 'utf8')
+  fs.readFileSync(`${__dirname}/_data/courses.json`, 'utf8')
 );
 const users = JSON.parse(
-  fs.readFileSync(`${__dirname}/course-resources/_data/users.json`, 'utf8')
+  fs.readFileSync(`${__dirname}/_data/users.json`, 'utf8')
 );
 const reviews = JSON.parse(
-  fs.readFileSync(`${__dirname}/course-resources/_data/reviews.json`, 'utf8')
+  fs.readFileSync(`${__dirname}/_data/reviews.json`, 'utf8')
 );
 
 const importData = async () => {
