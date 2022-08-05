@@ -64,4 +64,3 @@ async function seedData() {
 }
 
 seedData();
-// console.log(bootcamps);
