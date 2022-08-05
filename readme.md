@@ -54,8 +54,6 @@ this will destroy all data and will recreate initial data.
   * Owner only
 - Delete Bootcamp
   * Owner only
-- Calculate the average cost of all courses for a bootcamp
-- Calculate the average rating from the reviews for a bootcamp
 
 ## Courses API overview
 - List all courses
@@ -133,6 +131,8 @@ this will destroy all data and will recreate initial data.
   * user can update password (user must provide current password)
 
 ## Other important considerations
+- AverageCost and averageRating of a bootcamp is automatically calculated when a new courses or reviews are added or deleted.
+- If a bootcamp is deleted cascade delete all related courses and reviews.
 - Authentication is managed via JWT token
 - Password is hashed before saving to database
 - Security considerations
